@@ -1,3 +1,3 @@
 export default function Dashboard() {
-  return <iframe className="w-full h-full" src="https://app.findhaven.org/version-test/dashboard" frameBorder="0"></iframe>;
+  return <iframe className="w-full h-full" src="//app.findhaven.org/version-81hpb/dashboard" frameBorder="0"></iframe>;
 }
