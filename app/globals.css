@@ -46,7 +46,7 @@
 }
 
 body {
-  font-family: var(--font-inter), Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), Helvetica, sans-serif;
 }
 
 @layer utilities {
