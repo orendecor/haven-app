@@ -26,7 +26,7 @@ export const authConfig = {
             async authorize(credentials) {
                 try {
 
-                    console.log({ credentials })
+                
                     const { email, password } = userSchema.parse(credentials);
                     const user = await prisma.user.findUnique({
                         where: {
@@ -45,7 +45,7 @@ export const authConfig = {
                     if (!isPasswordValid) {
                         return null;
                     }
-
+                    
                     return { id: user.id!.toString(), name: user.name, email: user.email };
                 } catch (error) {
                     console.error('Login error:', error);
@@ -73,7 +73,7 @@ export const authConfig = {
         // },
         async signIn({ user }: { user: NextAuthUser | AdapterUser }) {
             try {
-                console.log({ user })
+                
                 // if (!user.email) {
                 //     throw new Error("Email is required");
                 // }

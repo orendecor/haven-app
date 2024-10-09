@@ -33,7 +33,7 @@ export default function Menu() {
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold">
             <Image
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Haven Logo"
               width={200}
               height={26.66}

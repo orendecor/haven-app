@@ -1,7 +1,7 @@
-const publicRoutes = [
+export const PUBLIC_ROUTES = [
     '/signup',
     '/login',
     '/'
 ];
 
-export default publicRoutes;
+export const LOGIN_TERMINAL = '/login';

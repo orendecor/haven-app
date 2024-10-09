@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -14,6 +16,7 @@ import {
   LogOut,
 } from "lucide-react";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 export default function Header() {
     return (
         <header className="h-16 border-b flex items-center justify-between px-4">
@@ -51,7 +54,7 @@ export default function Header() {
                       <User className="mr-2 h-4 w-4" />
                       <Link href="/profile"><span>Profile</span></Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => signOut()}>
                       <LogOut className="mr-2 h-4 w-4" />
                       <span>Log out</span>
                     </DropdownMenuItem>
