@@ -41,7 +41,7 @@ export default function Header() {
                       className="hover:bg-transparent"
                     >
                       <Avatar>
-                        <AvatarImage src="/placeholder-avatar.jpg" alt="User" />
+                        <AvatarImage alt="User" />
                         <AvatarFallback>U</AvatarFallback>
                       </Avatar>
                     </Button>
