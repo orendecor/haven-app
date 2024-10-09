@@ -26,6 +26,7 @@ export const authConfig = {
             async authorize(credentials) {
                 try {
 
+                    console.log({ credentials })
                     const { email, password } = userSchema.parse(credentials);
                     const user = await prisma.user.findUnique({
                         where: {
@@ -39,8 +40,8 @@ export const authConfig = {
                         //TODO: check if exists in Bubble
                     }
 
-                    const isPasswordValid = await verifyPassword(email, password);
-
+                    const isPasswordValid = await verifyPassword(password, user.password);
+                    
                     if (!isPasswordValid) {
                         return null;
                     }
