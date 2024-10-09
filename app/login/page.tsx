@@ -8,9 +8,9 @@ export default function LoginPage() {
       {/* Left side */}
       <div className="hidden w-1/2 bg-primary lg:block">
         <div className="flex h-full items-center justify-center">
-          <div className="text-primary-foreground items-center flex flex-col space-y-4">
+          <div className="text-primary-foreground items-center flex flex-col space-y-10">
             <Image src="/logo-white.png" alt="Haven Logo" width={300} height={40} />
-            <h1 className="text-4xl font-bold">Welcome</h1>
+            <h1 className="text-3xl font-light uppercase">Welcome</h1>
           </div>
         </div>
       </div>
